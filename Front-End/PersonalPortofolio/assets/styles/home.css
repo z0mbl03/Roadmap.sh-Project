@@ -1,0 +1,171 @@
+/* ========== COMMON STRUCTURE ========== */
+.flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-item {
+    padding: var(--base-pd);
+    border-bottom: 2px solid;
+}
+
+.content-title {
+    padding: var(--base-pd) 0;
+    text-align: center;
+}
+
+
+/* ========== SIDENAV STRUCTURE ========== */
+.side-nav {
+    padding: 0;
+    border: none;
+}
+
+.side-nav__title {
+    padding: calc(var(--base-pd) * 1.5) 0;
+}
+
+
+.side-nav__item {
+    border-bottom: 2px solid;
+    padding: calc(var(--base-pd) / 3) var(--base-pd);
+    text-align: center;
+}
+
+.side-nav__item:hover {
+    background: black;
+    color: white;
+}
+
+
+/* ========== EXPERIENCE STRUCTURE ========== */
+.experience-item__title {
+    padding: calc(var(--base-pd) / 2) 0 var(--base-pd);
+    text-align: start;
+}
+
+.experience__item {
+    padding-bottom: var(--base-pd);
+}
+
+.experience__item p {
+    margin-bottom: calc(var(--base-mg) / 2);
+}
+
+
+/* ========== EDUCATION STRUCTURE ========== */
+.education__item {
+    padding: calc(var(--base-pd) / 2) 0 calc(var(--base-pd));
+}
+
+.education__item p {
+    padding-bottom: calc(var(--base-pd) * .8);
+}
+
+.course-list {
+    list-style: inside disclosure-closed;
+    line-height: 1.7em;
+    padding-left: var(--base-pd);
+}
+
+
+/* ========== REVIEWS STRUCTURE ========== */
+.reviews {
+    padding: var(--base-pd);
+}
+
+.reviews__list {
+    padding: var(--base-pd) calc(var(--base-pd) * 2);
+    display: flex;
+    overflow-x: scroll;
+    gap: 1em;
+    scroll-snap-type: x mandatory;
+}
+
+.review__item {
+    flex: 0 0 95%;
+    border: 2px solid;
+    border-radius: 30px;
+    padding: var(--base-pd);
+    scroll-snap-align: center;
+}
+
+.review__text {
+    padding: var(--base-pd);
+    padding-bottom: calc(var(--base-pd) * .5);
+}
+
+.review__subject {
+    color: var(--txt-clr-secondary);
+    padding: var(--base-pd);
+    padding-top: calc(var(--base-pd) * .5);
+
+}
+
+
+
+
+
+/*
+==============================================
+|                BREAK POINT                 |
+==============================================*/
+@media screen and (min-width: 50rem) {
+
+    /* ========== COMMON STRUCTURE ========== */
+    .flex-container {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .flex-item {
+        border-style: solid;
+        border-width: 0 1px 2px;
+        padding-top: 0;
+        /* flex: 1 1 auto; */
+    }
+
+    .side-nav__title, .experience__title, .education__title {
+        min-height: calc(2.5em + calc(var(--base-pd) * 2));
+        align-content: center;
+    }
+
+
+
+    /* ========== NAVBAR STRUCTURE ========== */
+    .side-nav {
+        border-left: none;
+    }
+
+    .side-nav__title {
+        margin: 0 var(--base-mg) 0;
+    }
+
+    .side-nav__item {
+        text-align: start;
+    }
+
+
+
+    /* ========== EDUCATION STRUCTURE ========== */
+    .education {
+        border-right: none;
+    }
+
+
+
+}
+
+
+@media screen and (min-width: 55rem) {
+    /* ========== REVIES  STRUCTURE ========== */
+    .reviews__list {
+        overflow: hidden;
+        scroll-snap-type: none;
+    }
+
+    .review__item {
+        flex: 1 1 auto;
+    }
+
+}

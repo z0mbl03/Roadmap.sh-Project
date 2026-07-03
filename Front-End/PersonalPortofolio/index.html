@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Basic HTML Website | Roadmap.sh Learning</title>
+        <meta charset="UTF-8" />
+        <meta name="description" content="A clean, responsive HTML portfolio template built as a learning project from Roadmap.sh. Featuring semantic HTML5 and SEO best practices." />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta property="og:title" content="Basic HTML Website" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="./assets/images/home.png" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="350" />
+        <meta property="og:image:height" content="495" />
+        <meta property="og:image:alt" content="Basic HTML Website template from Roadmap.sh" />
+        <meta property="og:url" content="http://localhost:4444" />
+        <link rel="icon" type="image/x-icon" sizes="32x32" href="./assets/icons/multi-page.ico" />
+        <link rel="canonical" href="http://localhost:4444" /> <!-- this tag to avoid duplicate page in search engine -->
+        <link rel="stylesheet" href="./assets/styles/common.css" />
+        <link rel="stylesheet" href="./assets/styles/home.css" />
+    </head>
+
+
+    <body>
+        <header>
+            <!-- top navigation bar -->
+            <nav class="main-nav">
+                <ul class="main-nav__list">
+                    <li class="main-nav__item">
+                        <a href="profile/index.html">
+                            <div class="profile">
+                                <div class="profile__avatar">
+                                    <img src="./assets/images/profile/profile-picture.png" alt="Profile image"/>
+                                </div>
+                                <span class="profile__name">z0mbl03</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="main-nav__item"><a href="./index.html">Home</a></li>
+                    <li class="main-nav__item"><a href="./project/index.html">Project</a></li>
+                    <li class="main-nav__item"><a href="./article/index.html">Articles</a></li>
+                    <li class="main-nav__item"><a href="./contact/index.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <h1>Frontend Developer</h1>
+            <p>HTML only without styling</p>
+        </header>
+
+        <main>
+            <div class="flex-container main-content">
+                <!-- left navigation bar -->
+                <nav class="flex-item side-nav">
+                    <h2 class="content-title side-nav__title">Projects</h2>
+                    <ul class="side-nav__list">
+                        <li class="side-nav__item">HTML Only Portofolio</li>
+                        <li class="side-nav__item">Calculator</li>
+                        <li class="side-nav__item">Quiz App</li>
+                        <li class="side-nav__item">Countdown Time</li>
+                        <li class="side-nav__item">Product Upcoming Page</li>
+                    </ul>
+                </nav>
+
+                <section class="flex-item experiences">
+                    <!-- experience -->
+                    <h2 class="content-title experience__title">Work Experience</h2>
+                    <article class="experience__item">
+                        <h3 class="content-title experience-item__title">roadmap.sh</h3>
+                        <p>Solved all the frontend projects</p>
+                        <a href="https://www.github.com/z0mbl03">Visit my Profile</a>
+                    </article>
+
+                    <article class="experience__item">
+                        <h3 class="content-title experience-item__title">OpenSource Work</h3>
+                        <p>
+                            Contributed to 50 opensource projects. Made my own project
+                            with 200 GitHub Stars.
+                        </p>
+                        <a href="https://github.com/z0mbl03">Visit my GitHub Profile</a>
+                    </article>
+                </section>
+
+                <section class="flex-item education">
+                    <!-- education sections -->
+                    <h2 class="content-title education__title">Education</h2>
+                    <article class="education__item">
+                        <p>
+                            Graduate with 3.99 out of 4.0 CGPA. Wo Acme Hackaton.
+                            Orginized 30 sessions.
+                        </p>
+
+                        <p>Courses I took:</p>
+                        <ul class="course-list">
+                            <li>Object Oriented Programming</li>
+                            <li>Data Structures and Algorithms</li>
+                            <li>Web Enginerring</li>
+                            <li>Artificial Intelegence</li>
+                            <li>Human Computer Interaction</li>
+                            <li>Computer Graphics</li>
+                            <li>Database Management System</li>
+                            <li>Distribute Database Systems</li>
+                            <li>Discreet Mathematics</li>
+                        </ul>
+                    </article>
+                </section>
+            </div>
+
+
+            <section class="reviews">
+                <h2 class="content-title review__title">Review from my Teachers</h2>
+                <div class="reviews__list">
+                    <article class="review__item">
+                        <p class="review__text">
+                            z0mbl03 was a briliant student. always stood out
+                            with his assignments.
+                        </p>
+
+                        <div class="review__subject">
+                            <p class="subject__name">John Doe</p>
+                            <p class="subject__department">Assistent Professor</p>
+                        </div>
+                    </article>
+
+                    <article class="review__item">
+                        <p class="review__text">
+                            z0mbl03 was a briliant student. always stood out
+                            with his assignments.
+                        </p>
+
+                        <div class="review__subject">
+                            <p class="subject__name">John Doe</p>
+                            <p class="subject__department">Assistent Professor</p>
+                        </div>
+                    </article>
+
+                    <article class="review__item">
+                        <p class="review__text">
+                            z0mbl03 was a briliant student. always stood out
+                            with his assignments.
+                        </p>
+
+                        <div class="review__subject">
+                            <p class="subject__name">John Doe</p>
+                            <p class="subject__department">Assistent Professor</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&#x00A9; all rights reserved 2026</p>
+        </footer>
+
+    </body>
+</html>

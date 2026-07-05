@@ -72,6 +72,7 @@
 /* ========== REVIEWS STRUCTURE ========== */
 .reviews {
     padding: var(--base-pd);
+    margin-bottom: var(--page-mg-bottom);
 }
 
 .reviews__list {

@@ -1,0 +1,47 @@
+header {
+    border: none;
+}
+
+/* ========== MAIN STRUCTURE ========== */
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 0 var(--base-mg);
+    padding: 0 var(--base-pd);
+    margin-bottom: var(--page-mg-bottom);
+    gap: 15px;
+    min-width: calc(30em + 30px);
+}
+
+
+/* ========== FLEX ITEM STRUCTURE ========== */
+.project-item {
+    padding: var(--base-pd);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    height: clamp(8em, calc((12.5em * 2) + (-25vw)), 16em);
+    min-width: 30em;
+    border: 2px solid;
+    border-radius: 15px;
+    background: rgb(160, 160, 160);
+}
+
+
+/* ========== IMAGE STRUCTURE ========== */
+.project-item__img {
+    height: 100%;
+    border: 2px solid;
+    border-radius: 5px;
+}
+
+.project-item__img img {
+    height: 100%;
+    border-radius: inherit;
+}
+
+
+/* ========== DESCRIPTION STRUCTURE ========== */
+.project-item__desc > * {
+    padding: calc(var(--base-pd) / 2);
+}

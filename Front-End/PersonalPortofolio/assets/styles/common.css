@@ -17,6 +17,7 @@
     --base-lh: 1.5;
     --base-mg: 1rem;
     --base-pd: 1rem;
+    --page-mg-bottom: 10rem;
     --fonts-stack: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     --ff-heading: "Press Start 2P", var(--fonts-stack);
 

@@ -1,0 +1,40 @@
+header {
+    border: none;
+}
+
+/* ========== CONTAINER STRUCTURE ========== */
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 var(--base-mg);
+    padding: 0 var(--base-pd);
+    margin-bottom: var(--page-mg-bottom);
+    gap: 1.5em;
+    min-width: calc(30em + 30px);
+}
+
+
+/* ========== CONTAINER ITEM STRUCTURE ========== */
+.container__item {
+    padding: var(--base-pd);
+    display: flex;
+    align-items: center;
+    gap: clamp(2em, 7%, 4em);
+    height: clamp(8em, calc((12.5em * 2) + (-25vw)), 16em);
+    min-width: 30em;
+    border: 2px solid;
+    border-radius: 15px;
+    background: rgb(160, 160, 160);
+}
+
+/* ========== META STRUCTURE ========== */
+.container__item-meta {
+    height: 100%;
+    min-width: clamp(8em, 10%, 10em);
+}
+
+
+/* ========== DESCRIPTION STRUCTURE ========== */
+.container__item-desc > * {
+    padding: calc(var(--base-pd) / 2);
+}

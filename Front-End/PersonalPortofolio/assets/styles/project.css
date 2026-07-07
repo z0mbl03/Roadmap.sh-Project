@@ -2,6 +2,6 @@
 .project-item__img img {
     height: 100%;
     width: 100%;
-    outline: 2px solid;
+    outline: var(--base-brd-width) solid;
     border-radius: 5px;
 }

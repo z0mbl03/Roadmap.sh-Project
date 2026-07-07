@@ -1,0 +1,87 @@
+header {
+    border: none;
+}
+
+main {
+    --content-width: 80%;
+    
+    margin: 0 var(--base-mg) var(--page-mg-bottom);
+    min-width: 30em;
+
+}
+
+
+/* ========== CONTACT STRUCTURE ========== */
+.contact-me {
+    margin: 0 auto calc(var(--base-mg) * 7);
+    max-width: var(--content-width);
+}
+
+.contact-me__text {
+    width: 100%;
+    padding: 1em;
+    margin: var(--base-mg) 0 calc(var(--base-mg) * 2);
+    border: var(--base-brd-width) solid;
+    border-radius: 5px;
+}
+
+.contact-me__text::placeholder {
+    font-weight: bold;
+    opacity: 0.5;
+}
+
+label {
+    font-weight: bold;
+}
+
+textarea {
+    resize: none;
+    height: clamp(8em, 20vw, 18em) !important;
+}
+
+.btn {
+    padding: 1em 3em;
+    border: var(--base-brd-width) solid;
+    border-radius: 5px;
+}
+
+
+
+/* ========== ALTERNATIVE STRUCTURE ========== */
+.alternative-contact {
+    margin: var(--base-mg) auto;
+    max-width: var(--content-width);
+}
+
+.alternative-contact h4 {
+    margin: 0 0 calc(var(--base-mg) * 2);
+}
+
+.alternative-contact__item {
+    display: flex;
+    max-height: 3em;
+    gap: 1.5em;
+    margin: calc(var(--base-mg) * 1) 0;
+}
+
+.alternative-contact__item-icon {
+    height: 1.5em;
+}
+
+.alternative-contact__item-icon img {
+    height: 100%;
+}
+
+.alternative-contact__item-addr {
+    align-content: center;
+    font-weight: bold;
+}
+
+.alternative-contact__item-addr a {
+    color: var(--txt-clr-primary);
+    font-weight: normal;
+}
+
+.alternative-contact__item-addr a:hover {
+    color: red;
+}

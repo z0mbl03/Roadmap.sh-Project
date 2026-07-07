@@ -6,7 +6,7 @@
 
 .flex-item {
     padding: var(--base-pd);
-    border-bottom: 2px solid;
+    border-bottom: var(--base-brd-width) solid;
 }
 
 .content-title {
@@ -27,7 +27,7 @@
 
 
 .side-nav__item {
-    border-bottom: 2px solid;
+    border-bottom: var(--base-brd-width) solid;
     padding: calc(var(--base-pd) / 3) var(--base-pd);
     text-align: center;
 }
@@ -85,7 +85,7 @@
 
 .review__item {
     flex: 0 0 95%;
-    border: 2px solid;
+    border: var(--base-brd-width) solid;
     border-radius: 30px;
     padding: var(--base-pd);
     scroll-snap-align: center;
@@ -100,7 +100,6 @@
     color: var(--txt-clr-secondary);
     padding: var(--base-pd);
     padding-top: calc(var(--base-pd) * .5);
-
 }
 
 
@@ -121,7 +120,7 @@
 
     .flex-item {
         border-style: solid;
-        border-width: 0 1px 2px;
+        border-width: 0 calc(var(--base-brd-width) / 2) var(--base-brd-width);
         padding-top: 0;
         /* flex: 1 1 auto; */
     }

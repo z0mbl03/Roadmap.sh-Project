@@ -16,6 +16,7 @@
         <link rel="icon" type="image/x-icon" sizes="32x32" href="../assets/icons/multi-page.ico" />
         <link rel="canonical" href="http://localhost:4444/contact" /> <!-- this tag to avoid duplicate page in search engine -->
         <link rel="stylesheet" href="../assets/styles/common.css" />
+        <link rel="stylesheet" href="../assets/styles/contact.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -54,63 +55,63 @@
                 <form action="#" method="POST" enctype="application/x-www-form-urlencoded">
                     <fieldset>
                         <label for="name">Name</label><br>
-                        <input type="text" id="name" name="name" placeholder="Enter your name" required />
+                        <input class="contact-me__text" type="text" id="name" name="name" placeholder="Enter your name" required />
 
                         <br/>
 
                         <label for="email">Email</label><br>
-                        <input type="text" id="email" name="email" placeholder="Enter your email" required />
+                        <input class="contact-me__text" type="text" id="email" name="email" placeholder="Enter your email" required />
 
                         <br/>
 
-                        <label for="name">Name</label><br>
-                        <textarea id="msg" name="msg" placeholder="Write your message..."></textarea>
+                        <label for="msg">Message</label><br>
+                        <textarea class="contact-me__text" id="msg" name="msg" placeholder="Write your message..."></textarea>
 
                         <br/>
 
-                        <button>Send Message</button>
+                        <button class="btn">Send Message</button>
                     </fieldset>
                 </form>
             </section>
 
-            <section class="alternative">
+            <section class="alternative-contact">
                 <h4>Other way to connect</h4>
-                <div class="contact-item">
-                    <div class="contact-icon">
+                <div class="alternative-contact__item">
+                    <div class="alternative-contact__item-icon">
                         <img src="../assets/images/icons/icon-email.png" alt="email icon" />
                     </div>
 
-                    <div class="contact-addr">
+                    <div class="alternative-contact__item-addr">
                         <p>Email: <a href="mailto:hello@example.com">hello@example.com</a></p>
                     </div>
                 </div>
 
-                <div class="contact-item">
-                    <div class="contact-icon">
+                <div class="alternative-contact__item">
+                    <div class="alternative-contact__item-icon">
                         <img src="../assets/images/icons/icon-github.png" alt="github icon" />
                     </div>
 
-                    <div class="contact-addr">
+                    <div class="alternative-contact__item-addr">
                         <p>GitHub: <a href="https://www.github.com/z0mbl03">github.com/z0mbl03</a></p>
                     </div>
                 </div>
 
-                <div class="contact-item">
-                    <div class="contact-icon">
+                <div class="alternative-contact__item">
+                    <div class="alternative-contact__item-icon">
                         <img src="../assets/images/icons/icon-linkedin.png" alt="linkedin icon" />
                     </div>
 
-                    <div class="contact-addr">
+                    <div class="alternative-contact__item-addr">
                         <p>Linkedin: <a href="#">linkedin.com/in/z0mbl03</a></p>
                     </div>
                 </div>
 
-                <div class="contact-item">
-                    <div class="contact-icon">
+                <div class="alternative-contact__item">
+                    <div class="alternative-contact__item-icon">
                         <img src="../assets/images/icons/icon-twitter.png" alt="twitter icon" />
                     </div>
 
-                    <div class="contact-addr">
+                    <div class="alternative-contact__item-addr">
                         <p>Twitter: <a href="#">twitter.com/z0mbl03</a></p>
                     </div>
                 </div>

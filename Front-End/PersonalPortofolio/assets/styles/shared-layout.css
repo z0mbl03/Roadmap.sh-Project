@@ -22,7 +22,7 @@ header {
     gap: clamp(2em, 7%, 4em);
     height: clamp(8em, calc((12.5em * 2) + (-25vw)), 16em);
     min-width: 30em;
-    border: 2px solid;
+    border: var(--base-brd-width) solid;
     border-radius: 15px;
     background: rgb(160, 160, 160);
 }

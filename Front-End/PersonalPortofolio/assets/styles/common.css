@@ -17,6 +17,7 @@
     --base-lh: 1.5;
     --base-mg: 1rem;
     --base-pd: 1rem;
+    --base-brd-width: 2px;
     --page-mg-bottom: 10rem;
     --fonts-stack: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     --ff-heading: "Press Start 2P", var(--fonts-stack);
@@ -113,7 +114,7 @@ header {
     height: 10em;
     text-align: center;
     align-content: center;
-    border-bottom: 2px solid;
+    border-bottom: var(--base-brd-width) solid;
 }
 
 header > h1 {

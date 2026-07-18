@@ -5,4 +5,4 @@ Solution for [Single Page CV](https://roadmap.sh/projects/single-page-cv) : [her
 
 Solution for [Basic HTML Website](https://roadmap.sh/projects/basic-html-website) : [here](/Front-End/BasicHTMLWebsite)
 
-Solution for [Personal Portofolio](https://roadmap.sh/projects/portofolio-website) : [here](/Front-End/PersonalPortofolio)
+Solution for [Personal Portofolio](https://roadmap.sh/projects/portfolio-website) : [here](/Front-End/PersonalPortofolio)

@@ -16,6 +16,7 @@
         <link rel="icon" type="image/x-icon" sizes="32x32" href="../assets/icons/multi-page.ico" />
         <link rel="canonical" href="http://localhost:4444" /> <!-- this tag to avoid duplicate page in search engine -->
         <link rel="stylesheet" href="../assets/styles/common.css" />
+        <link rel="stylesheet" href="../assets/styles/profile.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -29,7 +30,7 @@
             <nav class="main-nav">
                 <ul class="main-nav__list">
                     <li class="main-nav__item">
-                        <a href=".">
+                        <a href="./index.html">
                             <div class="profile">
                                 <div class="profile__avatar">
                                     <img src="../assets/images/profile/profile-picture.png" alt="Profile image"/>
@@ -50,178 +51,170 @@
         </header>
 
         <main>
-            <section class="profile-container">
-                <div class="profile-pic">
-                    <img src="../assets/images/profile/profile-picture.png" alt="Profile picture" />
-                </div>
+            <!-- Profile section -->
+            <section class="profile-bio">
+                <!-- profile picture and description wrapper -->
+                <div class="profile-bio__wrapper bio-header">
+                    <div class="bio-header__wrapper bio-header__pic">
+                        <img src="../assets/images/profile/profile-picture.png" alt="Profile picture" />
+                    </div>
 
-                <div class="intro-text">
-                    <h3>Hello, I'm z0mbl03</h3>
-                    <p>
-                        I'm a frontend developer who loves building clean, simple and user friendly websites using only HTML.
-                        I enjoy turning ideas into real projects and learning new things along the way. I believe in writing clean code
-                        and keeping things minimal.
-                    </p>
+                    <div class="bio-header__wrapper bio-header__desc">
+                        <h3 class="bio-header__desc-title">Hello, I'm z0mbl03</h3>
+                        <p class="bio-header__desc-text">
+                            I'm a frontend developer who loves building clean, simple and user friendly websites using only HTML.
+                            I enjoy turning ideas into real projects and learning new things along the way. I believe in writing clean code
+                            and keeping things minimal.
+                        </p>
 
-                    <div class="addr">
-                        <div class="addr__item">
-                            <div class="addr__item--icon">
-                                <img src="../assets/images/icons/icon-pin.png" alt="Physical addres icon" />
+                        <div class="bio-header__addr">
+                            <div class="bio-header__addr-wrapper">
+                                <div class="bio-header__addr-icon">
+                                    <img src="../assets/images/icons/icon-pin.png" alt="Physical addres icon" />
+                                </div>
+
+                                <span>Aceh</span>
                             </div>
 
-                            <div class="addr__item--label">
-                                <p>Aceh</p>
-                            </div>
-                        </div>
+                            <div class="bio-header__addr-wrapper">
+                                <div class="bio-header__addr-icon">
+                                    <img src="../assets/images/icons/icon-email.png" alt="Email addres icon" />
+                                </div>
 
-                        <div class="addr__item">
-                            <div class="addr__item--icon">
-                                <img src="../assets/images/icons/icon-email.png" alt="Email addres icon" />
+                                <span><a href="mailto:myPersonalEmail@eample.com">myPersonalEmail</a></span>
                             </div>
 
-                            <div class="addr__item--label">
-                                <p><a href="mailto:myPersonalEmail@eample.com">myPersonalEmail</a></p>
-                            </div>
-                        </div>
+                            <div class="bio-header__addr-wrapper">
+                                <div class="bio-header__addr-icon">
+                                    <img src="../assets/images/icons/icon-calendar.png" alt="Calendar icon" />
+                                </div>
 
-                        <div class="addr__item">
-                            <div class="addr__item--icon">
-                                <img src="../assets/images/icons/icon-calendar.png" alt="Calendar icon" />
-                            </div>
-
-                            <div class="addr__item--label">
-                                <p>Joined may 2017</p>
+                                <span>Joined may 2017</span>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="qualification-container">
-                    <div class="qualification">
-                        <div class="qualification__title">
-                            <div class="qualification__title--icon">
+                <!-- Profile qualification -->
+                <div class="profile-bio__wrapper bio-qualification">
+                    <div class="bio-qualification__wrapper">
+                        <div class="bio-qualification__title">
+                            <div class="bio-qualification__title-icon">
                                 <img src="../assets/images/icons/icon-education.png" alt="Education icon" />
                             </div>
 
-                            <div class="qualification__title--text">
-                                <p>Education</p>
-                            </div>
+                            <span class="bio-qualification__title-text">Education</span>
                         </div>
 
-                        <div class="qualification__detail">
+                        <div class="bio-qualification__detail">
                             <p>B.Sc. Computer Science</p>
                             <p>CGPA: 3.76 / 4</p>
                         </div>
                     </div>
 
-                    <div class="qualification">
-                        <div class="qualification__title">
-                            <div class="qualification__title--icon">
+                    <div class="bio-qualification__wrapper">
+                        <div class="bio-qualification__title">
+                            <div class="bio-qualification__title-icon">
                                 <img src="../assets/images/icons/icon-experience.png" alt="Experience icon" />
                             </div>
 
-                            <div class="qualification__title--text">
-                                <p>Experience</p>
-                            </div>
+                            <span class="bio-qualification__title-text">Experience</span>
                         </div>
 
-                        <div class="qualification__detail">
+                        <div class="bio-qualification__detail">
                             <p>open Source Contributor</p>
                             <p>50+ Contributors</p>
                         </div>
                     </div>
 
-                    <div class="qualification">
-                        <div class="qualification__title">
-                            <div class="qualification__title--icon">
+                    <div class="bio-qualification__wrapper">
+                        <div class="bio-qualification__title">
+                            <div class="bio-qualification__title-icon">
                                 <img src="../assets/images/icons/icon-specialization.png" alt="Specialization icon" />
                             </div>
 
-                            <div class="qualification__title--text">
-                                <p>Specialization</p>
-                            </div>
+                            <span class="bio-qualification__title-text">Specialization</span>
                         </div>
 
-                        <div class="qualification__detail">
+                        <div class="bio-qualification__detail">
                             <p>HTML only</p>
                             <p>No CSS or JavaScript</p>
                         </div>
                     </div>
 
-                    <div class="qualification">
-                        <div class="qualification__title">
-                            <div class="qualification__title--icon">
+                    <div class="bio-qualification__wrapper">
+                        <div class="bio-qualification__title">
+                            <div class="bio-qualification__title-icon">
                                 <img src="../assets/images/icons/icon-focus.png" alt="Focus icon" />
                             </div>
 
-                            <div class="qualification__title--text">
-                                <p>Focus</p>
-                            </div>
+                            <span class="bio-qualification__title-text">Focus</span>
                         </div>
 
-                        <div class="qualification__detail">
+                        <div class="bio-qualification__detail">
                             <p>Clean Layouts</p>
                             <p>Good User Experience</p>
                         </div>
                     </div>
+                </div>
            </section>
 
             <section class="about-me">
-                <h3>My skills</h3>
-                <div class="skill">
-                    <div class="skill__items">
-                        <div class="skill__items--text">
+                <div class="about-me__item skill-list">
+                    <h3>My skills</h3>
+                    <div class="skill-list__item">
+                        <div class="skill-list__item-label">
                             <p>HTML</p>
                         </div>
 
-                        <div class="skill__items--bar">
-                            <span class="bar-skill"></span>
+                        <div class="skill-list__item-bar">
+                            <span class="skill-list__item-bar-fill html-level"></span>
                         </div>
                     </div>
 
-                    <div class="skill__items">
-                        <div class="skill__items--text">
+                    <div class="skill-list__item">
+                        <div class="skill-list__item-label">
                             <p>Problem Solving</p>
                         </div>
 
-                        <div class="skill__items--bar">
-                            <span class="bar-skill"></span>
+                        <div class="skill-list__item-bar">
+                            <span class="skill-list__item-bar-fill problem-solving-level"></span>
                         </div>
                     </div>
 
-                    <div class="skill__items">
-                        <div class="skill__items--text">
+                    <div class="skill-list__item">
+                        <div class="skill-list__item-label">
                             <p>Project Planning</p>
                         </div>
 
-                        <div class="skill__items--bar">
-                            <span class="bar-skill"></span>
+                        <div class="skill-list__item-bar">
+                            <span class="skill-list__item-bar-fill project-planning-level"></span>
                         </div>
                     </div>
 
-                    <div class="skill__items">
-                        <div class="skill__items--text">
+                    <div class="skill-list__item">
+                        <div class="skill-list__item-label">
                             <p>Communication</p>
                         </div>
 
-                        <div class="skill__items--bar">
-                            <span class="bar-skill"></span>
+                        <div class="skill-list__item-bar">
+                            <span class="skill-list__item-bar-fill communication-level"></span>
                         </div>
                     </div>
 
-                    <div class="skill__items">
-                        <div class="skill__items--text">
+                    <div class="skill-list__item">
+                        <div class="skill-list__item-label">
                             <p>Consistency</p>
                         </div>
 
-                        <div class="skill__items--bar">
-                            <span class="bar-skill"></span>
+                        <div class="skill-list__item-bar">
+                            <span class="skill-list__item-bar-fill consistency-level"></span>
                         </div>
                     </div>
                 </div>
 
-                <div class="about-me__text">
-                    <h3>About me</h3>
+                <div class="about-me__item description">
+                    <h3 class="description__title">About me</h3>
                     <p>
                         I started my web development journey with hTML only challanges.
                         Over time, I built multiple projects, contribute to open source and improved my problem solving skills.
@@ -229,43 +222,43 @@
                     </p>
                 </div>
 
-                <div class="stats-container">
-                    <div class="stats">
-                        <div class="stats__number">
+                <div class="about-me__item stats">
+                    <div class="stats__item">
+                        <div class="stats__item-count">
                             <p>5+</p>
                         </div>
 
-                        <div class="stats__label">
+                        <div class="stats__item-label">
                             <p>Project</p>
                         </div>
                     </div>
 
-                    <div class="stats">
-                        <div class="stats__number">
+                    <div class="stats__item">
+                        <div class="stats__item-count">
                             <p>50+</p>
                         </div>
 
-                        <div class="stats__label">
+                        <div class="stats__item-label">
                             <p>GitHub Stars</p>
                         </div>
                     </div>
 
-                    <div class="stats">
-                        <div class="stats__number">
+                    <div class="stats__item">
+                        <div class="stats__item-count">
                             <p>20+</p>
                         </div>
 
-                        <div class="stats__label">
+                        <div class="stats__item-label">
                             <p>Courses</p>
                         </div>
                     </div>
 
-                    <div class="stats">
-                        <div class="stats__number">
+                    <div class="stats__item">
+                        <div class="stats__item-count">
                             <p>100+</p>
                         </div>
 
-                        <div class="stats__label">
+                        <div class="stats__item-label">
                             <p>hours Learned</p>
                         </div>
                     </div>

@@ -1,0 +1,235 @@
+main {
+    --page-min-width: 31.5em;
+    --border-radius: 10px;
+}
+
+/* ========== PROFILE BIO STRUCTURE ========== */
+.profile-bio {
+    border-bottom: var(--base-brd-width) solid;
+}
+
+
+/* ========== PROFILE BIO ITEM STRUCTURE ========== */
+.profile-bio__wrapper {
+    display: flex;
+    align-items: center;
+    margin: var(--base-mg);
+    min-width: var(--page-min-width);
+    gap: 1.5em;
+}
+
+
+
+/* ========== PROFILE BIO HEADER STRUCTURE ========== */
+.bio-header {
+    flex-direction: column;
+}
+
+@media screen and (min-width: 50.5em) {
+    .bio-header {
+        flex-direction: row;
+    }
+}
+
+
+/* ========== PROFILE BIO HEADER PICTURE STRUCTURE ========== */
+.bio-header__pic {
+    height: clamp(10em, 30vw, 16em);
+}
+
+.bio-header__pic img {
+    border: var(--base-brd-width) solid;
+    border-radius: var(--border-radius);
+    max-height: 100%;
+}
+
+
+/* ========== PROFILE BIO HEADER DESCRIPTION STRUCTURE ========== */
+.bio-header__desc {
+    max-width: 55em;
+}
+
+.bio-header__desc > * {
+    padding: var(--base-pd);
+}
+
+
+/* ========== PROFILE BIO HEADER ADDRESS STRUCTURE ========== */
+.bio-header__addr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: start;
+    row-gap: var(--base-pd);
+
+}
+
+.bio-header__addr-wrapper {
+    display: flex;
+    height: 2.5em;
+    width: 50%;
+    align-items: center;
+    gap: 1.5em;
+    min-width: 18em;
+}
+
+.bio-header__addr-wrapper:first-child {
+    width: 100%;
+}
+
+.bio-header__addr-icon {
+    height: 80%;
+}
+
+.bio-header__addr-icon img {
+    height: 100%;
+}
+
+
+
+
+/* ========== PROFILE BIO QUALIFICATION STRUCTURE ========== */
+.bio-qualification {
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+.bio-qualification__wrapper {
+    border: 2px solid;
+    border-radius: var(--border-radius);
+    padding: var(--base-pd);
+    flex: 1 0 14em;
+    scroll-snap-align: start;
+}
+
+.bio-qualification__title {
+    display: flex;
+    min-height: 25%;
+    gap: 1.5em;
+    align-items: center;
+    margin-bottom: var(--base-mg);
+}
+
+.bio-qualification__title-icon {
+    height: 2.5em;
+}
+
+.bio-qualification__title-icon img {
+    height: 100%;
+}
+
+.bio-qualification__detail {
+    align-content: center;
+    min-height: 5em;
+}
+
+
+
+
+
+/* ========== ABOUT ME STRUCTURE ========== */
+.about-me {
+    min-width: var(--page-min-width);
+    margin-bottom: var(--page-mg-bottom);
+}
+
+.about-me__item {
+    margin: var(--base-mg);
+}
+
+.about-me__item > h3 {
+    margin-bottom: calc(var(--base-mg) / 2);
+    align-content: center;
+}
+
+
+/* ========== ABOUT ME SKILL LIST STRUCTURE ========== */
+.skill-list__item {
+    display: flex;
+    height: 2em;
+    align-content: center;
+    align-items: center;
+}
+
+.skill-list__item-label {
+    align-content: center;
+    flex: 0 0 15em;
+    font-weight: bold;
+}
+
+.skill-list__item-bar {
+    border: var(--base-brd-width) solid;
+    border-radius: var(--border-radius);
+    height: 1em;
+    flex: 0 1 100%;
+}
+
+.skill-list__item-bar-fill {
+    display: block;
+    background: rgb(153, 153, 153);
+    height: 100%;
+    border-radius: var(--border-radius) 0 0 var(--border-radius);
+}
+
+.skill-list__item-bar .html-level {
+    width: 60%;
+}
+
+.skill-list__item-bar .problem-solving-level {
+    width: 85%;
+}
+
+.skill-list__item-bar .project-planning-level {
+    width: 75%;
+}
+
+.skill-list__item-bar .communication-level {
+    width: 45%;
+}
+
+.skill-list__item-bar .consistency-level {
+    width: 65%;
+}
+
+
+
+/* ========== ABOUT ME DESCRIPTION STRUCTURE ========== */
+.description {
+    padding: var(--base-pd) 0;
+}
+
+.description > p {
+    max-width: 45em;
+}
+
+
+
+/* ========== ABOUT ME STATS STRUCTURE ========== */
+.stats {
+    display: flex;
+    border: var(--base-brd-width) solid;
+    border-radius: var(--border-radius);
+    align-items: center;
+    text-align: center;
+}
+
+.stats__item {
+    flex: 1 0 5em;
+    padding: calc(var(--base-pd) / 2) 0;
+    border-right: var(--base-brd-width) solid;
+}
+
+.stats__item:last-child {
+    border: none;
+}
+
+.stats__item-count {
+    margin-bottom: auto;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.stats__item-label {
+    height: clamp(2em, calc(23em - 50vw), 4em);
+    align-content: center;
+}
